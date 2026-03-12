@@ -1,0 +1,37 @@
+/* === BLINK === */
+@keyframes blink {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.blink {
+	animation: blink 1s step-end infinite;
+}
+
+/* === GLOW PULSE === */
+@keyframes glow-pulse {
+	0%, 100% {
+		text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+	}
+	50% {
+		text-shadow: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 60px currentColor;
+	}
+}
+
+.glow-pulse {
+	animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* === RAINBOW === */
+@keyframes rainbow {
+	0% { filter: hue-rotate(0deg); }
+	100% { filter: hue-rotate(360deg); }
+}
+
+.rainbow {
+	animation: rainbow 3s linear infinite;
+}

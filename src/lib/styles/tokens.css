@@ -1,0 +1,85 @@
+:root {
+	/* === BACKGROUNDS === */
+	--color-bg: #000000;
+	--color-bg-panel: #0A0A2A;
+	--color-bg-panel-alt: #1A0A2E;
+	--color-bg-table-header: #330066;
+	--color-bg-table-row: #0D0D3B;
+	--color-bg-table-row-alt: #1A0A2E;
+	--color-bg-input: #111111;
+	--color-bg-button: #1A1A3E;
+	--color-bg-button-hover: #2A2A5E;
+
+	/* === TEXT === */
+	--color-text: #00FF00;
+	--color-text-secondary: #39FF14;
+	--color-text-hot: #FF00FF;
+	--color-text-warning: #FFFF00;
+	--color-text-heading: #00FFFF;
+	--color-text-muted: #888888;
+	--color-text-inverse: #FFFFFF;
+
+	/* === LINKS === */
+	--color-link: #00FFFF;
+	--color-link-visited: #FFFF00;
+	--color-link-hover: #FF0000;
+
+	/* === STATUS === */
+	--color-status-automated: #FF0000;
+	--color-status-downsized: #FF6600;
+	--color-status-on-notice: #FFD700;
+	--color-status-rumor: #888888;
+	--color-status-safe: #00FF00;
+
+	/* === ACCENTS === */
+	--color-accent-pink: #FF69B4;
+	--color-accent-orange: #FF6600;
+	--color-accent-fire: #FF3300;
+	--color-border-glow: #00FFFF;
+	--color-border-table: #6600CC;
+
+	/* === TYPOGRAPHY === */
+	--font-family-fun: "Comic Sans MS", "Comic Sans", cursive;
+	--font-family-heading: Impact, "Arial Black", sans-serif;
+	--font-family-body: "Times New Roman", Times, serif;
+	--font-family-mono: "Courier New", Courier, monospace;
+
+	--font-size-xs: 10px;
+	--font-size-sm: 12px;
+	--font-size-base: 14px;
+	--font-size-md: 16px;
+	--font-size-lg: 20px;
+	--font-size-xl: 28px;
+	--font-size-xxl: 36px;
+
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+	--line-height: 1.5;
+
+	/* === SPACING === */
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-5: 24px;
+	--space-6: 32px;
+	--space-7: 48px;
+
+	/* === BORDERS === */
+	--border-table: 2px ridge #6600CC;
+	--border-panel: 2px solid #00FFFF;
+	--border-glow: 1px solid #00FFFF;
+	--border-input: 1px solid #00FFFF;
+
+	/* === RADIUS === */
+	--radius: 0px;
+
+	/* === GLOW EFFECTS === */
+	--glow-cyan: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+	--glow-green: 0 0 10px #00FF00, 0 0 20px #00FF00;
+	--glow-pink: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+	--glow-red: 0 0 10px #FF0000, 0 0 20px #FF0000;
+
+	/* === LAYOUT === */
+	--layout-width: 700px;
+}

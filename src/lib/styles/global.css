@@ -1,0 +1,167 @@
+/* === BODY & STARFIELD === */
+body {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-family-fun);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height);
+	text-align: center;
+
+	/* CSS starfield — multiple radial-gradient layers */
+	background-image:
+		radial-gradient(1px 1px at 10% 20%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 80% 10%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 30% 80%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 60% 50%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 90% 70%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 15% 55%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 45% 35%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 70% 90%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 25% 45%, #aaaaff 50%, transparent 100%),
+		radial-gradient(1px 1px at 55% 15%, #aaaaff 50%, transparent 100%),
+		radial-gradient(1px 1px at 85% 85%, #aaaaff 50%, transparent 100%),
+		radial-gradient(2px 2px at 50% 50%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 5% 90%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 95% 30%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 40% 65%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 75% 45%, #aaaaff 50%, transparent 100%),
+		radial-gradient(1px 1px at 20% 75%, #ffffff 50%, transparent 100%),
+		radial-gradient(2px 2px at 65% 25%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 35% 5%, #ffffff 50%, transparent 100%),
+		radial-gradient(1px 1px at 88% 55%, #ffffff 50%, transparent 100%);
+	background-size: 200px 200px;
+	background-repeat: repeat;
+}
+
+/* === LINKS === */
+a {
+	color: var(--color-link);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--color-link-visited);
+}
+
+a:hover {
+	color: var(--color-link-hover);
+}
+
+/* === HEADINGS === */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-heading);
+	color: var(--color-text-heading);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: var(--glow-cyan);
+}
+
+h1 { font-size: var(--font-size-xxl); }
+h2 { font-size: var(--font-size-xl); }
+h3 { font-size: var(--font-size-lg); }
+h4 { font-size: var(--font-size-md); }
+h5, h6 { font-size: var(--font-size-base); }
+
+/* === TABLES === */
+table {
+	width: 100%;
+	border: var(--border-table);
+}
+
+th {
+	background: var(--color-bg-table-header);
+	color: var(--color-text-warning);
+	font-family: var(--font-family-fun);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-bold);
+	text-transform: uppercase;
+	padding: var(--space-2) var(--space-3);
+	text-align: left;
+	border-bottom: var(--border-table);
+}
+
+td {
+	padding: var(--space-2) var(--space-3);
+	border-bottom: 1px solid #330066;
+	font-size: var(--font-size-sm);
+}
+
+tr:nth-child(even) {
+	background: var(--color-bg-table-row);
+}
+
+tr:nth-child(odd) {
+	background: var(--color-bg-table-row-alt);
+}
+
+tr:hover {
+	background: #2A1A4E;
+}
+
+/* === SCROLLBAR (webkit) === */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-border-table);
+	border: 1px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-border-glow);
+}
+
+/* === SELECTION === */
+::selection {
+	background: var(--color-border-table);
+	color: var(--color-text-warning);
+}
+
+/* === CONTENT WRAPPER === */
+.site-container {
+	max-width: var(--layout-width);
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* === MARKDOWN CONTENT === */
+.markdown-body p {
+	margin-bottom: var(--space-3);
+}
+
+.markdown-body strong {
+	color: var(--color-text-warning);
+}
+
+.markdown-body em {
+	color: var(--color-text-hot);
+	font-style: italic;
+}
+
+.markdown-body ul, .markdown-body ol {
+	margin-left: var(--space-5);
+	margin-bottom: var(--space-3);
+}
+
+.markdown-body li {
+	margin-bottom: var(--space-1);
+}
+
+.markdown-body blockquote {
+	border-left: 3px solid var(--color-border-glow);
+	padding-left: var(--space-3);
+	color: var(--color-text-muted);
+	margin-bottom: var(--space-3);
+}
+
+.markdown-body code {
+	font-family: var(--font-family-mono);
+	background: var(--color-bg-panel);
+	padding: 2px 4px;
+	color: var(--color-text-secondary);
+}
